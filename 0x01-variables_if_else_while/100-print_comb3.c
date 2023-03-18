@@ -17,7 +17,11 @@ int main(void)
 			{
 				continue;
 			}
-			else if (n > m || (n == 8 && m == 9))
+			else if (n > m)
+			{
+				continue;
+			}
+			else if (n == 8 && m == 9)
 			{
 				continue;
 			}
