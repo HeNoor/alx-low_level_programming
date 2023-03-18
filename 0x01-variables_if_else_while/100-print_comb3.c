@@ -19,11 +19,7 @@ int main(void)
 			}
 			putchar(n);
 			putchar(m);
-			if (n == 8 && m == 9)
-			{
-				continue;
-			}
-			else
+			else if (n+m != 17)
 			{
 				putchar(44);
 				putchar(32);
