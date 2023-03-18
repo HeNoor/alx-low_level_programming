@@ -17,10 +17,10 @@ int main(void)
 			{
 				putchar(n);
 				putchar(m);
-				if (n + m != 17)
+				if (n + m != 113)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(44);
+					putchar(32);
 				}
 			}
 		}
