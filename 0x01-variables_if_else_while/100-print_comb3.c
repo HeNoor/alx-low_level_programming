@@ -13,19 +13,11 @@ int main(void)
 	{
 		for (m = 48; m <= 57; m++)
 		{
-			if (n >= m)
+			if (n < m && n != m)
 			{
-				continue;
-			}
-			putchar(n);
-			putchar(m);
-			else
-			{
-				if (n+m == 17)
-				{
-					continue;
-				}
-				else
+				putchar(n);
+				putchar(m);
+				if (n+m != 17)
 				{
 					putchar(44);
 					putchar(32);
