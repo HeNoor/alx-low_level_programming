@@ -19,10 +19,17 @@ int main(void)
 			}
 			putchar(n);
 			putchar(m);
-			if (n+m != 17)
+			else
 			{
-				putchar(44);
-				putchar(32);
+				if (n+m == 17)
+				{
+					continue;
+				}
+				else
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
