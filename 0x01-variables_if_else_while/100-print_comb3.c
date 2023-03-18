@@ -17,6 +17,10 @@ int main(void)
 			{
 				continue;
 			}
+			else if (n > m)
+			{
+				continue;
+			}
 			else
 			{
 				putchar(n);
