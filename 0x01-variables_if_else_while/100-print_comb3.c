@@ -17,19 +17,16 @@ int main(void)
 			{
 				continue;
 			}
+			putchar(n);
+			putchar(m);
+			if (n == 8 && m == 9)
+			{
+				continue;
+			}
 			else
 			{
-				putchar(n);
-				putchar(m);
-				if (n != 8 && m != 9)
-				{
-					putchar(44);
-					putchar(32);
-				}
-				else
-				{
-					break;
-				}
+				putchar(44);
+				putchar(32);
 			}
 		}
 	}
