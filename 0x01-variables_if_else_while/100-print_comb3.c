@@ -13,11 +13,7 @@ int main(void)
 	{
 		for (m = 48; m <= 57; m++)
 		{
-			if (n == m)
-			{
-				continue;
-			}
-			else if (n > m)
+			if (n >= m)
 			{
 				continue;
 			}
@@ -25,11 +21,7 @@ int main(void)
 			{
 				putchar(n);
 				putchar(m);
-				if (n == 8 && m == 9)
-				{
-					continue;
-				}
-				else 
+				while (n != 8 && m != 9)
 				{
 					putchar(44);
 					putchar(32);
