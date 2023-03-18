@@ -21,16 +21,19 @@ int main(void)
 			{
 				continue;
 			}
-			else if (n == 8 && m == 9)
-			{
-				continue;
-			}
 			else
 			{
 				putchar(n);
 				putchar(m);
-				putchar(44);
-				putchar(32);
+				if (n == 8 && m == 9)
+				{
+					continue;
+				}
+				else 
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
