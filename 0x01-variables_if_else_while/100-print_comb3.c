@@ -17,7 +17,7 @@ int main(void)
 			{
 				putchar(n);
 				putchar(m);
-				if (n + m != 17)
+				if (n != 8 && m != 9)
 				{
 					putchar(44);
 					putchar(32);
