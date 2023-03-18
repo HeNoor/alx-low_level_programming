@@ -21,7 +21,7 @@ int main(void)
 			{
 				putchar(n);
 				putchar(m);
-				while (n != 8 && m != 9)
+				if (n != 8 && m != 9)
 				{
 					putchar(44);
 					putchar(32);
