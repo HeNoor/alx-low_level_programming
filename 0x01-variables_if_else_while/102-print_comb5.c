@@ -8,29 +8,22 @@ int main(void)
 {
 	int a;
 	int b;
-	int c;
-	int d;
 
-	for (a = 48; a <= 57; a++)
+	for (a = 0; a <= 99; a++)
 	{
-		for (b = 48; b <= 57; b++)
+		for (b = 0; b <= 99; b++)
 		{
-			for (c = 48; c <= 57; c++)
+			if (a != b)
 			{
-				for (d = 48; d <= 57; d++)
+				putchar((a / 10) + 48);
+				putchar((a % 10) + 48);
+				putchar(' ');
+				putchar((b / 10) + 48);
+				putchar((b % 10) + 48);
+				if (a != 98 || b != 99)
 				{
-					if (a >= b && a == c && b < d)
-					{
-						putchar(a);
-						putchar(b);
-						putchar(32);
-						putchar(c);
-						putchar(d);
-						if (a + b + c + d != 227)
-						{
-							putchar(44);
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
