@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: prints the alphabet in lowercase
+ * Description: prints_alphabets
  *
  * Return: Always 0 (Success)
  */
