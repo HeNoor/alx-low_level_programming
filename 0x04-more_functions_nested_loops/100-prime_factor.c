@@ -14,6 +14,7 @@ int main(void)
 	long int i;
 	long int maxfact;
 	long int n;
+	n = 612852475143;
 
 	while (n % 2 == 0)
 	{
@@ -27,10 +28,6 @@ int main(void)
 			maxfact = i;
 			n = n / i;
 		}
-	}
-	if (n > 2)
-	{
-		maxfact = n;
 	}
 	printf("%ld", maxfact);
 	return (0);
