@@ -3,20 +3,19 @@
 #include <math.h>
 
 /**
- * main - Entry point
+ * prime_factor - Entry point
  *
  * Description: find the premier factor of a number
+ *
+ * @n: checks input of function
  *
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void prime_factor(long int n)
 {
 	long int i;
 	long int maxfact;
-	long int n;
-	n = 612852475143;
-	maxfact = -1;
 
 	while (n % 2 == 0)
 	{
@@ -27,8 +26,8 @@ int main(void)
 	{
 		while (n % i == 0)
 		{
-			maxfact = i;
 			n = n / i;
+			maxfact = i;
 		}
 	}
 	if (n > 2)
@@ -36,5 +35,16 @@ int main(void)
 		maxfact = n;
 	}
 	printf("%ld\n", maxfact);
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	prime_factor(612852475143);
+
 	return (0);
 }
