@@ -28,6 +28,10 @@ int main(void)
 			n = n / i;
 		}
 	}
+	if (n < 2)
+	{
+		maxfact = n;
+	}
 	printf("%ld", maxfact);
 	return (0);
 }
