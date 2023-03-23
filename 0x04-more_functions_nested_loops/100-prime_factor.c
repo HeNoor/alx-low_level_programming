@@ -16,6 +16,7 @@ int main(void)
 	long int maxfact;
 	long int n;
 	n = 612852475143;
+	maxfact = -1;
 
 	while (n % 2 == 0)
 	{
