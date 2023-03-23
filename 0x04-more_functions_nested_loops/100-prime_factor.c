@@ -28,7 +28,7 @@ int main(void)
 			n = n / i;
 		}
 	}
-	if (n < 2)
+	if (n > 2)
 	{
 		maxfact = n;
 	}
