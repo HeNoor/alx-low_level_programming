@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - Entry point
+ * _strncpy - Entry point
  *
  * @dest: char input
  * @src: char input
@@ -18,10 +18,11 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 	}
-	while (n < i)
+	while (i <= n)
 	{
 		dest[i] = '\0';
 		i++;
 	}
+
 	return (dest);
 }
