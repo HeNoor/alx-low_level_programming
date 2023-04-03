@@ -1,5 +1,7 @@
 #include "main.h"
 /**
+ * _memcpy - Entry point
+ *
  * @dest: char input
  * @src: char input
  * @n: unsigned int input
