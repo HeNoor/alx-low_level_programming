@@ -17,7 +17,7 @@ char *cap_string(char *str)
 
 	while (*(str + i))
 	{
-		if (*(str + i) <= 'z' && *(str + i) >= 'a')
+		if (*(str + i) >= 97 && *(str + i) <= 122)
 		{
 			if (i == 0)
 			{
@@ -25,10 +25,12 @@ char *cap_string(char *str)
 			}
 			else
 			{
-				for (j = 0; j != '\0'; j++)
+				for (j = 0; j <= 12; j++)
 				{
-					if (str[i - 1] == array[j])
+					if (array[j] == str[i - 1])
+					{
 						str[i] = str[i] - 32;
+					}
 				}
 			}
 		}
