@@ -5,8 +5,8 @@
 
 /**
  * _calloc - Entry point
- * @unsigned int nmemb elements of the array
- * @unsigned int size input
+ * @nmemb: unsigned int elements of the array
+ * @size: unsigned int input
  * Return: returns a pointer to the allocated memory
  */
 
