@@ -53,6 +53,24 @@ int _atoi(char *s)
 	return (number * sign);
 }
 /**
+ * print_int - Entry point
+ * @n: int
+ * Return: return 0
+ */
+void print_int(unsigned long int n)
+{
+	unsigned long int div = 1, i, res;
+
+	for (i = 0; n / div > 9; i++, div = div * 10)
+		;
+	for (; div >= 1; n = n % div, div = div / 10)
+	{
+		res = n / div;
+		_putchar('0' + res);
+	}
+}
+
+/**
  * main - Entry point
  * @argc: int
  * @argv: char
@@ -68,7 +86,7 @@ int main(int argc, char *argv[])
 		_puts("Error");
 		exit(98);
 	}
-	printf("%d\n", _atoi(argv[1]) * _atoi(argv[2]));
+	print_int(_atoi(argv[1]) * _atoi(argv[2]));
 	_putchar('\n');
 
 	return (0);
