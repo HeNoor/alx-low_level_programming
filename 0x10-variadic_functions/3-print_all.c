@@ -46,7 +46,7 @@ void form_float(char *separator, va_list args)
 void form_string(char *separator, va_list args)
 {
 	char *str = va_arg(args, char *);
-	switch ((int)(!=str))
+	switch ((int)(!str))
 		case 1:
 			str = "(nil)";
 	printf("%s%s", separator, str);
@@ -61,6 +61,7 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	int j;
+	char *separator = "";
 	va_list args;
 	all_t all[] = {
 		{"c", form_char},
