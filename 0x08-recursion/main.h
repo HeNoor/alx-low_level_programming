@@ -12,5 +12,6 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int is_palindrome(char *s);
 int square(int n, int k);
+int prime_number(int n);
 
 #endif
