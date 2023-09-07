@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- * main - Entry point
+ * main - prints its name, followed by a new line
  * @argc: int input
  * @argv: char input
  * Return: Always 0 (Success)
