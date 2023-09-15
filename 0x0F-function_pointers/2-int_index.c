@@ -3,7 +3,7 @@
 
 /**
  * int_index -  returns the index
- * 
+ *
  * @array: int array
  * @size: the number of elements in the array
  * @cmp: a pointer to the function to be used to compare values
